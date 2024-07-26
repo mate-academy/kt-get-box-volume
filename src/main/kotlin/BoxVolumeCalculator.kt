@@ -1,3 +1,6 @@
-fun getBoxVolume(length: Double, width: Double, height: Double = 1.0): Double {
-    return length * width * height
+fun <T : Number> getBoxVolume(length: T, width: T, height: T = 1 as T): Double {
+    val lengthDouble = length.toDouble()
+    val widthDouble = width.toDouble()
+    val heightDouble = height.toDouble()
+    return lengthDouble * widthDouble * heightDouble
 }
