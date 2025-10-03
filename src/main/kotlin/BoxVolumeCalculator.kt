@@ -1,4 +1,6 @@
-fun getBoxVolume(length: Int, width: Int, height: Int = 1): Int {
+private const val DEFAULT_HEIGHT = 1
+
+fun getBoxVolume(length: Int, width: Int, height: Int = DEFAULT_HEIGHT): Int {
     return length * width * height
 }
 
