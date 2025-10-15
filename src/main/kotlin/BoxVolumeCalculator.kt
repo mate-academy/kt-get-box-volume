@@ -1,5 +1,5 @@
-
-fun getBoxVolume (length: Int, width: Int, height: Int = 1) : Int {
+private const val WIDTH = 1
+fun getBoxVolume (length: Int, width: Int, height: Int = WIDTH) : Int {
   return getArea(length, width) * height
 }
 
